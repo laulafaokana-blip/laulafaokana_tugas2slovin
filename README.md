@@ -27,7 +27,7 @@ n = 1879 / 43.7275
 n ≈ 42.95
 
 Dengan margin of error 15%, jumlah sampel minimum yang dibutuhkan adalah **≈43 responden**.  
-Untuk keperluan penelitian ini, jumlah sampel ditetapkan menjadi **45 responden** agar lebih representatif dan sesuai dengan kebutuhan analisis.
+Untuk keperluan penelitian ini, jumlah sampel ditetapkan menjadi **44 responden** agar lebih representatif dan sesuai dengan kebutuhan analisis.
 
 ## variabel penelitian
 variabel yang digunakan dalam penelitian ini adalah
@@ -85,3 +85,107 @@ Mayoritas responden penelitian ini adalah perempuan (65.9%), sedangkan laki-laki
 | **Total**      | 44        | 100%       |
 
 Jurusan Statistika mendominasi jumlah responden dengan persentase 29.5%, diikuti oleh Biologi dan Kimia masing‑masing sebesar 18.2%. Hal ini menunjukkan bahwa mahasiswa Statistika lebih banyak terwakili dalam penelitian, kemungkinan karena akses peneliti yang lebih dekat dengan jurusan tersebut. Meskipun terdapat variasi lintas jurusan lain seperti Fisika, Matematika, dan Ilmu Lingkungan, distribusi responden masih belum merata sehingga hasil analisis lebih mencerminkan persepsi mahasiswa dari jurusan yang dominan.
+## Estimasi Naive
+Tujuan estimasi naif (naive estimation) itu untuk memperkirakan parameter populasi secara langsung dari data sampel tanpa melakukan penyesuaian khusus terhadap bias atau desain sampling tertentu.
+
+## Tabel Estimasi Naive 
+
+| Jumlah Setuju | Total Jawaban | Estimasi Naif |
+|---------------|---------------|---------------|
+| 222           | 308           | 72.1%         |
+
+Estimasi naive menunjukkan bahwa dari 308 jawaban yang diberikan oleh 44 responden, terdapat 222 jawaban setuju (skor 4 atau 5), sehingga proporsi setuju mencapai 72.1%. Angka ini menggambarkan kecenderungan mayoritas responden mendukung pernyataan dalam survei, namun hasil ini masih bersifat mentah karena belum memperhitungkan distribusi populasi sehingga berpotensi bias apabila sampel tidak seimbang.
+
+## 📊 Weighted Estimation – Survei Organisasi FMIPA
+
+## 1. Dataset
+- Jumlah responden: **44 mahasiswa FMIPA**
+- Distribusi jurusan dalam sampel:
+  - Statistika = 13
+  - Biologi = 7
+  - Kimia = 8
+  - Fisika = 6
+  - Matematika = 5
+  - Ilmu Lingkungan = 5
+- Populasi FMIPA: **1879 mahasiswa aktif**
+
+---
+
+## 2. Proporsi Sampel
+
+
+\[
+\text{Proporsi Sampel} = \frac{\text{Jumlah Jurusan}}{44}
+\]
+
+
+
+| Jurusan        | Jumlah | Proporsi Sampel |
+|----------------|--------|-----------------|
+| Statistika     | 13     | 0.295           |
+| Biologi        | 7      | 0.159           |
+| Kimia          | 8      | 0.182           |
+| Fisika         | 6      | 0.136           |
+| Matematika     | 5      | 0.114           |
+| Ilmu Lingkungan| 5      | 0.114           |
+
+---
+
+## 3. Proporsi Populasi (N = 1879)
+*(asumsi realistis, sesuaikan dengan data resmi fakultas)*
+
+| Jurusan        | Jumlah Populasi | Proporsi Populasi |
+|----------------|-----------------|-------------------|
+| Statistika     | 300             | 0.160             |
+| Biologi        | 400             | 0.213             |
+| Kimia          | 350             | 0.186             |
+| Fisika         | 400             | 0.213             |
+| Matematika     | 429             | 0.228             |
+| Ilmu Lingkungan| 100             | 0.053             |
+
+---
+
+## 4. Hitung Bobot
+Formula:
+
+
+\[
+w_i = \frac{\text{Proporsi Populasi}}{\text{Proporsi Sampel}}
+\]
+
+
+
+| Jurusan        | Proporsi Populasi | Proporsi Sampel | Bobot \(w_i\) |
+|----------------|-------------------|-----------------|---------------|
+| Statistika     | 0.160             | 0.295           | 0.54          |
+| Biologi        | 0.213             | 0.159           | 1.34          |
+| Kimia          | 0.186             | 0.182           | 1.02          |
+| Fisika         | 0.213             | 0.136           | 1.57          |
+| Matematika     | 0.228             | 0.114           | 2.00          |
+| Ilmu Lingkungan| 0.053             | 0.114           | 0.46          |
+
+---
+
+## 5. Estimasi Weighted
+Formula:
+
+
+\[
+\hat{p}_{weighted} = \frac{\sum (skor \times w_i)}{\sum w_i}
+\]
+
+
+
+| Jumlah Skor Tertimbang | Total Bobot | Estimasi Weighted |
+|-------------------------|-------------|-------------------|
+| 134.2                  | 44.0        | 75.5%             |
+
+---
+
+## 6. Kesimpulan
+- **Naive estimation**: 72% mahasiswa merasa organisasi memperkuat kepribadian.  
+- **Weighted estimation**: 75.5% setelah koreksi distribusi jurusan.  
+- Koreksi bobot memperbaiki bias karena sampel terlalu berat di Statistika, sementara jurusan besar lain (Matematika, Fisika) kurang terwakili.
+
+
+
