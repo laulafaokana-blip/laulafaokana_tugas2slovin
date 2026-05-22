@@ -7,5 +7,81 @@ Organisasi mahasiswa merupakan salah satu wadah penting dalam pengembangan diri 
 Tujuan umum dari penelitian ini adalah untuk memperoleh gambaran yang komprehensif mengenai persepsi mahasiswa Universitas Mataram terhadap pengalaman berorganisasi, khususnya dalam kaitannya dengan pengembangan diri, keterampilan sosial, serta tantangan akademik yang dihadapi. Melalui analisis deskriptif terhadap data survei online, penelitian ini berupaya menyajikan distribusi responden, rata-rata skor pada berbagai aspek pengembangan diri, serta visualisasi hasil yang informatif. Dengan demikian, penelitian ini diharapkan dapat memberikan pemahaman yang lebih mendalam mengenai peran organisasi mahasiswa sebagai sarana pembentukan karakter dan peningkatan kapasitas diri, sekaligus mengidentifikasi potensi hambatan yang perlu dikelola secara bijak.
 
 ## metedologi penelitian
-Penelitian ini menggunakan pendekatan survei online dengan teknik non-probability sampling, khususnya metode kenyamanan (convenience sampling). Metode ini dipilih karena responden diambil dari lingkungan terdekat peneliti, yaitu mahasiswa Universitas Mataram yang mudah dijangkau melalui penyebaran tautan Google Form. Dengan cara ini, data dapat dikumpulkan secara cepat dan praktis, meskipun hasilnya memiliki keterbatasan dalam hal representativitas populasi. Instrumen penelitian berupa kuesioner daring dengan skala Likert 1–5, yang memuat variabel demografis seperti jenis kelamin dan fakultas, serta sejumlah pernyataan utama terkait pengalaman berorganisasi. Skala Likert dipilih karena mampu menggambarkan tingkat persetujuan responden terhadap pernyataan yang diajukan, sehingga memudahkan analisis deskriptif. Pengumpulan data dilakukan dengan menyebarkan tautan Google Form kepada mahasiswa sekelas dan lingkaran pertemanan. Dari proses ini terkumpul sebanyak 27 responden. Walaupun jumlah responden relatif kecil dan tidak mewakili seluruh populasi mahasiswa, data tetap dapat memberikan gambaran awal mengenai persepsi mahasiswa terhadap organisasi. Analisis data dilakukan menggunakan perangkat lunak SPSS. Tahapan analisis meliputi pembuatan tabel frekuensi dan persentase, perhitungan rata-rata skor Likert, serta visualisasi berupa grafik pie dan bar chart. Selain itu, dilakukan pula estimasi sederhana (naive estimation) untuk menghitung proporsi jawaban langsung dari sampel, serta weighting sederhana untuk menyesuaikan hasil dengan distribusi populasi fakultas. Dengan demikian, hasil analisis tidak hanya menyajikan gambaran deskriptif, tetapi juga memberikan perbandingan antara estimasi sampel dan estimasi yang lebih mendekati populasi.
+Metodologi penelitian ini menggunakan pendekatan survei online dengan teknik non-probability sampling melalui metode kenyamanan (convenience sampling), di mana jumlah responden pada tugas 1 ditentukan tanpa rumus Slovin sehingga terkumpul 27 mahasiswa Universitas Mataram dari lingkungan terdekat peneliti melalui penyebaran tautan Google Form, sedangkan pada tugas 2 jumlah responden ditentukan dengan rumus Slovin pada margin of error 15% sehingga terkumpul 44 mahasiswa, dengan instrumen berupa kuesioner daring skala Likert 1–5 yang memuat variabel demografis (jenis kelamin dan fakultas) serta pernyataan utama terkait pengalaman berorganisasi, dan data dianalisis menggunakan R studio melalui tahapan pembuatan tabel frekuensi dan persentase, perhitungan rata-rata skor Likert, visualisasi grafik pie dan bar chart, serta estimasi sederhana (naive estimation) dan weighting sederhana untuk menyesuaikan hasil dengan distribusi populasi fakultas sehingga analisis tidak hanya menyajikan gambaran deskriptif tetapi juga perbandingan antara estimasi sampel dan estimasi yang lebih mendekati populasi.
 
+## Penentuan Jumlah Sampel
+## Penentuan Jumlah Sampel dengan Rumus Slovin
+
+Rumus Slovin:
+n = N / (1 + N * e²)
+
+Keterangan:
+- N = jumlah populasi (1879 mahasiswa aktif FMIPA)
+- e = margin of error (15% = 0.15)
+
+Perhitungan:
+n = 1879 / (1 + 1879 * (0.15)²)
+n = 1879 / (1 + 1879 * 0.0225)
+n = 1879 / (1 + 42.7275)
+n = 1879 / 43.7275
+n ≈ 42.95
+
+Dengan margin of error 15%, jumlah sampel minimum yang dibutuhkan adalah **≈43 responden**.  
+Untuk keperluan penelitian ini, jumlah sampel ditetapkan menjadi **45 responden** agar lebih representatif dan sesuai dengan kebutuhan analisis.
+
+## variabel penelitian
+variabel yang digunakan dalam penelitian ini adalah
+- Nama Responden
+- Jenis Kelamin
+- apakah anda pernah mengikuti organisasi
+- pertanyaan Dampak Keikutsertaan Organisasi terhadap Pengembangan Diri (P1-P10)
+- 
+## Uji Validitas
+validitas digunakan untuk nmemastikan pertanyaan/kuesioner benar‑benar tepat mengukur hal yang ingin diteliti (misalnya stres akademik, pengalaman organisasi). Jadi instrumen tidak melenceng dari tujuan penelitian.
+Semua item valid (korelasi > 0.30):
+# Hasil Uji Validitas
+| Item | Korelasi |
+|------|----------|
+| Komunikasi meningkat | 0.90 |
+| Kepemimpinan berkembang | 0.88 |
+| Mengatur waktu | 0.83 |
+| Kepercayaan diri meningkat | 0.92 |
+| Jaringan sosial lebih luas | 0.82 |
+| Matang secara emosional | 0.80 |
+| Keseluruhan dampak organisasi | 0.85 |
+Semua nilai korelasi item–total > 0.30, artinya setiap butir pertanyaan memiliki hubungan yang kuat dengan skor total. Dengan kata lain, semua item valid dan layak digunakan untuk mengukur konstruk yang dituju.
+
+## Uji Reabilitas
+reabilitas digunakan untuk memastikan instrumen konsisten dan hasilnya stabil jika digunakan berulang kali. Jadi data yang dihasilkan bisa dipercaya dan tidak berubah‑ubah hanya karena faktor kebetulan.
+# Hasil Uji Reliabilitas (Cronbach's Alpha)
+
+| raw_alpha | std.alpha | G6(smc) | average_r | S/N | ase   | mean | sd  | median_r |
+|-----------|-----------|---------|-----------|-----|-------|------|-----|----------|
+| 0.94      | 0.94      | 0.94    | 0.69      | 16  | 0.014 | 3.8  | 0.76| 0.68     |
+
+Nilai Cronbach’s Alpha (`raw_alpha` / `std.alpha`) = **0.94**, jauh di atas ambang batas 0.70. Artinya instrumen penelitian ini **sangat reliabel**. Nilai rata‑rata korelasi antar item (`average_r` = 0.69) juga menunjukkan konsistensi internal yang kuat.
+
+## Analisis Deskriptif
+
+## Tabel Frekuensi & Persentase Jenis Kelamin
+
+| Jenis Kelamin | Frekuensi | Persentase |
+|---------------|-----------|------------|
+| Laki-laki     | 15        | 34.1%      |
+| Perempuan     | 29        | 65.9%      |
+| **Total**     | 44        | 100%       |
+
+Mayoritas responden penelitian ini adalah perempuan (65.9%), sedangkan laki-laki hanya 34.1%. Hal ini menunjukkan bahwa keterlibatan mahasiswa perempuan dalam organisasi lebih tinggi dibandingkan laki-laki, sekaligus menggambarkan bahwa persepsi dan pengalaman berorganisasi dalam penelitian ini lebih banyak terwakili oleh mahasiswa perempuan.
+## Tabe; Frekuensi & Persentase Jurusan
+
+| Jurusan        | Frekuensi | Persentase |
+|----------------|-----------|------------|
+| Statistika     | 13        | 29.5%      |
+| Biologi        | 8         | 18.2%      |
+| Kimia          | 8         | 18.2%      |
+| Fisika         | 7         | 15.9%      |
+| Matematika     | 6         | 13.6%      |
+| Ilmu Lingkungan| 6         | 13.6%      |
+| **Total**      | 44        | 100%       |
+
+Jurusan Statistika mendominasi jumlah responden dengan persentase 29.5%, diikuti oleh Biologi dan Kimia masing‑masing sebesar 18.2%. Hal ini menunjukkan bahwa mahasiswa Statistika lebih banyak terwakili dalam penelitian, kemungkinan karena akses peneliti yang lebih dekat dengan jurusan tersebut. Meskipun terdapat variasi lintas jurusan lain seperti Fisika, Matematika, dan Ilmu Lingkungan, distribusi responden masih belum merata sehingga hasil analisis lebih mencerminkan persepsi mahasiswa dari jurusan yang dominan.
