@@ -30,12 +30,19 @@ Dengan margin of error 15%, jumlah sampel minimum yang dibutuhkan adalah **≈43
 Untuk keperluan penelitian ini, jumlah sampel ditetapkan menjadi **44 responden** agar lebih representatif dan sesuai dengan kebutuhan analisis.
 
 ## variabel penelitian
-variabel yang digunakan dalam penelitian ini adalah
-- Nama Responden
-- Jenis Kelamin
-- apakah anda pernah mengikuti organisasi
-- pertanyaan Dampak Keikutsertaan Organisasi terhadap Pengembangan Diri (P1-P10)
-- 
+Variabel Demografis
+- Nama responden
+- Jurusan (Statistika, Biologi, Kimia, Fisika, Matematika, Ilmu Lingkungan)
+- Jenis kelamin (Laki-laki, Perempuan)
+- Pernah/tidak mengikuti organisasi
+Variabel Utama (Skala Likert 1–5)
+- P1: Keterampilan komunikasi meningkat
+- P2: Kemampuan kepemimpinan berkembang
+- P3: Kemampuan mengatur waktu
+- P4: Kepercayaan diri meningkat
+- P5: Jaringan sosial lebih luas
+- P6: Matang secara emosional
+- P7: Secara keseluruhan organisasi memperkuat kepribadian
 ## Uji Validitas
 validitas digunakan untuk nmemastikan pertanyaan/kuesioner benar‑benar tepat mengukur hal yang ingin diteliti (misalnya stres akademik, pengalaman organisasi). Jadi instrumen tidak melenceng dari tujuan penelitian.
 Semua item valid (korelasi > 0.30):
