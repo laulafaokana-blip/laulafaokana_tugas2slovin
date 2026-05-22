@@ -30,12 +30,13 @@ Dengan margin of error 15%, jumlah sampel minimum yang dibutuhkan adalah **≈43
 Untuk keperluan penelitian ini, jumlah sampel ditetapkan menjadi **44 responden** agar lebih representatif dan sesuai dengan kebutuhan analisis.
 
 ## variabel penelitian
-Variabel Demografis
+### Variabel Demografis
 - Nama responden
 - Jurusan (Statistika, Biologi, Kimia, Fisika, Matematika, Ilmu Lingkungan)
 - Jenis kelamin (Laki-laki, Perempuan)
 - Pernah/tidak mengikuti organisasi
-Variabel Utama (Skala Likert 1–5)
+-
+### Variabel Utama (Skala Likert 1–5)
 - P1: Keterampilan komunikasi meningkat
 - P2: Kemampuan kepemimpinan berkembang
 - P3: Kemampuan mengatur waktu
