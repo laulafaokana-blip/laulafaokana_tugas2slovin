@@ -181,8 +181,6 @@ Formula:
 | 134.2                  | 44.0        | 75.5%             |
 
 ---
-
-## 6. Kesimpulan
 - **Naive estimation**: 72% mahasiswa merasa organisasi memperkuat kepribadian.  
 - **Weighted estimation**: 75.5% setelah koreksi distribusi jurusan.  
 - Koreksi bobot memperbaiki bias karena sampel terlalu berat di Statistika, sementara jurusan besar lain (Matematika, Fisika) kurang terwakili.
