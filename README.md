@@ -72,7 +72,7 @@ Nilai Cronbach’s Alpha (`raw_alpha` / `std.alpha`) = **0.94**, jauh di atas am
 | **Total**     | 44        | 100%       |
 
 Mayoritas responden penelitian ini adalah perempuan (65.9%), sedangkan laki-laki hanya 34.1%. Hal ini menunjukkan bahwa keterlibatan mahasiswa perempuan dalam organisasi lebih tinggi dibandingkan laki-laki, sekaligus menggambarkan bahwa persepsi dan pengalaman berorganisasi dalam penelitian ini lebih banyak terwakili oleh mahasiswa perempuan.
-## Tabe; Frekuensi & Persentase Jurusan
+## Tabel Frekuensi & Persentase Jurusan
 
 | Jurusan        | Frekuensi | Persentase |
 |----------------|-----------|------------|
@@ -92,11 +92,11 @@ Tujuan estimasi naif (naive estimation) itu untuk memperkirakan parameter popula
 
 | Jumlah Setuju | Total Jawaban | Estimasi Naif |
 |---------------|---------------|---------------|
-| 222           | 308           | 72.1%         |
+| 222           | 308           | 72.0%         |
 
 Estimasi naive menunjukkan bahwa dari 308 jawaban yang diberikan oleh 44 responden, terdapat 222 jawaban setuju (skor 4 atau 5), sehingga proporsi setuju mencapai 72.1%. Angka ini menggambarkan kecenderungan mayoritas responden mendukung pernyataan dalam survei, namun hasil ini masih bersifat mentah karena belum memperhitungkan distribusi populasi sehingga berpotensi bias apabila sampel tidak seimbang.
 
-## 📊 Weighted Estimation – Survei Organisasi FMIPA
+##  Weighted Estimation
 
 ## 1. Dataset
 - Jumlah responden: **44 mahasiswa FMIPA**
@@ -166,7 +166,7 @@ w_i = \frac{\text{Proporsi Populasi}}{\text{Proporsi Sampel}}
 
 ---
 
-## 5. Estimasi Weighted
+## 5. Hasil Estimasi Weighted
 Formula:
 
 
@@ -181,9 +181,25 @@ Formula:
 | 134.2                  | 44.0        | 75.5%             |
 
 ---
-- **Naive estimation**: 72% mahasiswa merasa organisasi memperkuat kepribadian.  
-- **Weighted estimation**: 75.5% setelah koreksi distribusi jurusan.  
-- Koreksi bobot memperbaiki bias karena sampel terlalu berat di Statistika, sementara jurusan besar lain (Matematika, Fisika) kurang terwakili.
+-Angka 75,5% adalah hasil weighted estimation, yaitu proporsi mahasiswa FMIPA yang menyatakan organisasi memperkuat kepribadian setelah dilakukan koreksi distribusi jurusan; perhitungan ini memberi bobot pada tiap responden sesuai proporsi jurusan di populasi sehingga estimasi lebih representatif dan tidak bias oleh dominasi sampel dari satu jurusan tertentu. Dengan kata lain, weighted estimation memastikan bahwa hasil survei mencerminkan kondisi populasi FMIPA secara lebih akurat dibandingkan sekadar rata-rata sampel.
 
+## Perbandingan Naive dan Weigthing Estimation
 
+### Tabel Perbandingan Estimasi
 
+| Metode Estimasi     | Jumlah Setuju | Total Jawaban | Proporsi (%) |
+|----------------------|---------------|---------------|--------------|
+| Naive Estimation     | 222           | 308           | 72.0%        |
+| Weighted Estimation  | 233 (berbobot)| 308           | 75.5%        |
+
+Naive estimation menunjukkan 72% mahasiswa merasa organisasi memperkuat kepribadian, dihitung langsung dari sampel tanpa koreksi sehingga hanya mencerminkan kondisi responden yang terkumpul. Weighted estimation menghasilkan 75.5% setelah distribusi jurusan dalam sampel disesuaikan dengan proporsi populasi FMIPA; koreksi bobot ini penting karena sampel terlalu dominan dari jurusan Statistika, sehingga hasil berbobot lebih representatif dan mencerminkan kondisi seluruh mahasiswa FMIPA secara lebih akurat.
+Dengan kata lain, naive memberi gambaran awal dari sampel, sedangkan weighted memperbaiki bias agar hasil benar-benar mencerminkan populasi.
+
+## kesimpulan
+Penelitian berjudul Analisis Pengaruh Organisasi Mahasiswa terhadap Pengembangan Diri Mahasiswa Universitas Mataram menemukan bahwa keterlibatan dalam organisasi memberikan dampak positif yang kuat terhadap pengembangan diri mahasiswa. Instrumen penelitian terbukti valid (semua item korelasi >0.30) dan reliabel (Cronbach’s Alpha = 0.94), sehingga hasil analisis dapat dipercaya.
+
+Secara deskriptif, mayoritas responden adalah perempuan (65,9%) dengan dominasi jurusan Statistika (29,5%). Hal ini menimbulkan potensi bias distribusi sampel, sehingga dilakukan dua pendekatan estimasi:
+- Naive estimation: menunjukkan 72,1% mahasiswa merasa organisasi memperkuat kepribadian, dihitung langsung dari sampel    tanpa koreksi.
+- Weighted estimation: menghasilkan 75,5% setelah distribusi jurusan dalam sampel disesuaikan dengan proporsi populasi FMIPA. Koreksi bobot ini penting karena sampel terlalu dominan dari jurusan Statistika, sehingga hasil berbobot lebih representatif dan mencerminkan kondisi populasi secara keseluruhan.
+
+Hasil akhir penelitian ini menegaskan bahwa organisasi mahasiswa berperan nyata dalam memperkuat kepribadian dan kapasitas diri mahasiswa Universitas Mataram. Naive estimation memberi gambaran awal dari sampel, sedangkan weighted estimation memastikan kesimpulan lebih akurat terhadap populasi FMIPA.
